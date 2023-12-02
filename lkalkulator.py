@@ -18,9 +18,13 @@ actions = {
 action = input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie:")
 n = input('number 1')
 m = input('number 2')
-if type(n) and type(m) is not (int or float):
+try: 
+    n = float(n)
+    m = float(m)
+except:
     logging.info(f'nan: {n, m}')
     exit()
+
 if action == '1':
     sol = add(n, m)
 elif action == '2':
