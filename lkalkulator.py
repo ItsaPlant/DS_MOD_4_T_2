@@ -1,24 +1,34 @@
 import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
 
+
 def add(n, m):
     return n + m
+
+
 def sub(n, m):
     return n - m
+
+
 def mult(n, m):
     return n * m
+
+
 def div(n, m):
     return n / m
+
+
 actions = {
     '1': 'Dodawanie',
     '2': 'Odejmowanie',
     '3': 'Dzielenie',
     '4': 'Mnożenie'
 }
-action = input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie:")
+action = input(
+    "Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie:")
 n = input('number 1')
 m = input('number 2')
-try: 
+try:
     n = float(n)
     m = float(m)
 except:
