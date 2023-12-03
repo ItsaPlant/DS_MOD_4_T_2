@@ -47,7 +47,7 @@ if __name__ == "__main__":
     elif action == '4':
         sol = div(n, m)
     else:
-        logging.info(f'Action {action} not supported. Abort program.')
+        logging.info(f'Action {action} not supported. Abort the mission.')
         exit()
         
     logging.info(f"{actions[action]} of: {n} and {m}")
